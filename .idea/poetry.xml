@@ -4,6 +4,7 @@
     <option name="poetryVirtualenvPaths">
       <set>
         <option value="$PROJECT_DIR$/brain_games/.venv/bin/python" />
+        <option value="$PROJECT_DIR$/.venv/bin/python" />
       </set>
     </option>
   </component>
