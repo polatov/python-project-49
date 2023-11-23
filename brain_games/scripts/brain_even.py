@@ -1,5 +1,6 @@
 from random import randint
 import prompt
+from brain_games.cli import welcome_user
 
 
 def brain_game(name):
@@ -20,3 +21,10 @@ def brain_game(name):
                   f"Let's try again, {name}!")
             return
     return print(f"Congratulations, {name}!")
+
+def main():
+    user_name = welcome_user()
+    brain_game(user_name)
+
+if __name__ == '__main__':
+    main()
