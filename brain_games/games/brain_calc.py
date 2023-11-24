@@ -1,7 +1,7 @@
 import random
 import prompt
 from brain_games.cli import welcome_user
-
+from brain_games.scripts.brain_games import print_welcome_message
 
 def brain_calc(name):
     correct_answers = 0
@@ -28,6 +28,7 @@ def brain_calc(name):
             return
     return print(f"Congratulations, {name}!")
 def main():
+    print_welcome_message()
     user_name = welcome_user()
     brain_calc(user_name)
 

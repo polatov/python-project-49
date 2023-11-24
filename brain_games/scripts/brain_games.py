@@ -2,11 +2,12 @@
 
 from brain_games.cli import welcome_user
 
-
-def main():
+def print_welcome_message():
     print("Welcome to the Brain Games!")
-    user_name = welcome_user()
 
+def main() -> object:
+    print_welcome_message()
+    user_name = welcome_user()
 
 if __name__ == '__main__':
     main()
