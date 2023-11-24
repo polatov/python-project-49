@@ -1,9 +1,7 @@
 import random
 import prompt
-from brain_games.cli import welcome_user
-from brain_games.scripts.brain_games import print_welcome_message
 
-def brain_calc(name):
+def play_brain_calc(name):
     correct_answers = 0
     while correct_answers < 3:
         number_1 = random.randint(1, 100)
@@ -27,12 +25,3 @@ def brain_calc(name):
                   f"Let's try again, {name}!")
             return
     return print(f"Congratulations, {name}!")
-def main():
-    print_welcome_message()
-    user_name = welcome_user()
-    brain_calc(user_name)
-
-if __name__ == '__main__':
-    main()
-
-
