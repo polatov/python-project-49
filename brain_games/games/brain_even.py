@@ -4,7 +4,7 @@ import prompt
 
 def play_brain_even(name):
     correct_answers = 0
-    print(f'Answer "yes" if the given number is even. Otherwise answer "no".')
+    print(f'Answer "yes" if the number is even, otherwise answer "no".')
     while correct_answers < 3:
         number = random.randint(1, 100)
         print(f"Question: {number}")
