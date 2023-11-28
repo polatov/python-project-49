@@ -4,6 +4,7 @@ import math
 
 def play_brain_gcd(name):
     correct_answers = 0
+    print("Find the greatest common divisor of given numbers.")
     while correct_answers < 3:
         number1 = random.randint(1, 100)
         number2 = random.randint(1, 100)

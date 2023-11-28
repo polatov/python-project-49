@@ -4,6 +4,7 @@ import prompt
 
 def play_brain_progression(name):
     correct_answers = 0
+    print("What number is missing in the progression?")
     while correct_answers < 3:
         # Длина прогрессии
         length = random.randint(5, 10)
