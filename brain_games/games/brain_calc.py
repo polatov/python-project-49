@@ -3,6 +3,7 @@ import prompt
 
 def play_brain_calc(name):
     correct_answers = 0
+    print("What is the result of the expression?")
     while correct_answers < 3:
         number_1 = random.randint(1, 100)
         number_2 = random.randint(1, 100)
