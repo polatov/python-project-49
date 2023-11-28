@@ -1,8 +1,10 @@
 import random
 import prompt
 
+
 def play_brain_even(name):
     correct_answers = 0
+    print(f'Answer "yes" if given number is even. Otherwise answer "no".')
     while correct_answers < 3:
         number = random.randint(1, 100)
         print(f"Question: {number}")
