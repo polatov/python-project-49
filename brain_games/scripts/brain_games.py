@@ -9,7 +9,7 @@ def print_welcome_message():
 
 def main():
     print_welcome_message()
-    user_name = welcome_user()
+    welcome_user()
 
 
 if __name__ == '__main__':
