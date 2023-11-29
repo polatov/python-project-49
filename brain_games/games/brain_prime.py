@@ -13,7 +13,7 @@ def is_prime(number):
 
 def play_brain_prime(name):
     correct_answers = 0
-    print(f"Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
+    print("Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
     while correct_answers < 3:
         # Выбор числа
         number = random.randint(1, 99)
@@ -24,7 +24,8 @@ def play_brain_prime(name):
             print("Correct")
             correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n"
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
                   f"Let's try again, {name}!")
             return
     return print(f"Congratulations, {name}!")

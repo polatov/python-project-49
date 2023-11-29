@@ -1,6 +1,7 @@
 import random
 import prompt
 
+
 def play_brain_calc(name):
     correct_answers = 0
     print("What is the result of the expression?")
@@ -22,7 +23,8 @@ def play_brain_calc(name):
             print('Correct!')
             correct_answers += 1
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.\n"
+            print(f"{user_answer} is wrong answer ;(. "
+                  f"Correct answer was {correct_answer}.\n"
                   f"Let's try again, {name}!")
             return
     return print(f"Congratulations, {name}!")

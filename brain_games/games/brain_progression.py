@@ -32,7 +32,7 @@ def play_brain_progression(name):
         number_line[hidden_index] = '..'
 
         # Вопрос
-        print(f"Question: ", end='')
+        print("Question: ", end='')
         for element in number_line:
             print(element, end=' ')
         print()
@@ -45,7 +45,8 @@ def play_brain_progression(name):
             correct_answers += 1
 
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n"
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
                   f"Let's try again, {name}!")
             return
     return print(f"Congratulations, {name}!")
