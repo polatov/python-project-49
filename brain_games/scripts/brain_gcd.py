@@ -1,12 +1,9 @@
-from brain_games.scripts.brain_games import print_welcome_message
-from brain_games.cli import welcome_user
-from brain_games.games.brain_gcd import play_brain_gcd
+from brain_games.engine import run_game
+import brain_games.games.brain_gcd as brain_gcd
 
 
 def main():
-    print_welcome_message()
-    user_name = welcome_user()
-    play_brain_gcd(user_name)
+    run_game(brain_gcd.play_brain_gcd)
 
 
 if __name__ == '__main__':

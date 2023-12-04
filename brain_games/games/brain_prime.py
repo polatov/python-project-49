@@ -1,5 +1,4 @@
 import random
-import prompt
 
 
 def is_prime(number):
@@ -11,21 +10,10 @@ def is_prime(number):
     return True
 
 
-def play_brain_prime(name):
-    correct_answers = 0
-    print("Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
-    while correct_answers < 3:
-        # Выбор числа
-        number = random.randint(1, 99)
-        print(f"Question: {number}")
-        user_answer = prompt.string("Your answer: ")
-        correct_answer = 'yes' if is_prime(number) else 'no'
-        if user_answer == correct_answer:
-            print("Correct")
-            correct_answers += 1
-        else:
-            print(f"'{user_answer}' is wrong answer ;(. "
-                  f"Correct answer was '{correct_answer}'.\n"
-                  f"Let's try again, {name}!")
-            return
-    return print(f"Congratulations, {name}!")
+def play_brain_prime():
+    first_question = ("Answer \"yes\" if given number is prime. "
+                      "Otherwise answer \"no\".")
+    number = random.randint(1, 99)
+    internal_question = f"Question: {number}"
+    correct_answer = 'yes' if is_prime(number) else 'no'
+    return first_question, internal_question, correct_answer
