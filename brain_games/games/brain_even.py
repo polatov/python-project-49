@@ -1,8 +1,8 @@
 import random
 
 
-GAME_DESCRIPTION = "Answer \"yes\" if the number is even, "
-"otherwise answer \"no\"."
+GAME_DESCRIPTION = ("Answer \"yes\" if the number is even, "
+                    "otherwise answer \"no\".")
 
 
 def is_even(a):
