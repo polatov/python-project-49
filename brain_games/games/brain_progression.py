@@ -1,9 +1,10 @@
 import random
 
 
-def play_brain_progression():
-    first_question = "What number is missing in the progression?"
+GAME_DESCRIPTION = "What number is missing in the progression?"
 
+
+def generate_round():
     # Длина прогрессии
     length = random.randint(5, 10)
 
@@ -30,8 +31,6 @@ def play_brain_progression():
     number_line[hidden_index] = '..'
 
     # Вопрос
-    internal_question = "Question: " + " ".join(map(str, number_line))
+    question = "Question: " + " ".join(map(str, number_line))
 
-    return (first_question,
-            internal_question,
-            correct_answer)
+    return question, correct_answer

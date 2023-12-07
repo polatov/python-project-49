@@ -1,10 +1,19 @@
 import random
 
 
-def play_brain_even():
-    first_question = ("Answer \"yes\" if the number is even, "
-                      "otherwise answer \"no\".")
+GAME_DESCRIPTION = "Answer \"yes\" if the number is even, "
+"otherwise answer \"no\"."
+
+
+def is_even(a):
+    if a % 2 == 0:
+        return "yes"
+    else:
+        return "no"
+
+
+def generate_round():
     number = random.randint(1, 100)
-    correct_answer = "no" if number % 2 else "yes"
-    internal_question = f"Question: {number}"
-    return first_question, internal_question, correct_answer
+    correct_answer = is_even(number)
+    question = f"Question: {number}"
+    return question, correct_answer

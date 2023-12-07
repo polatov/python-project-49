@@ -1,18 +1,16 @@
 import prompt
 
 
-def run_game(game_func):
+def run_game(game_module):
     print("Welcome to the Brain Games!")
     user_name = prompt.string("May I have your name? ")
     print(f"Hello, {user_name}!")
-
-    first_question, _, _ = game_func()
-    print(first_question)
+    print(game_module.GAME_DESCRIPTION)
 
     correct_answers = 0
     while correct_answers < 3:
-        _, internal_question, correct_answer = game_func()
-        print(internal_question)
+        question, correct_answer = game_module.generate_round()
+        print(question)
         user_answer = prompt.string('Your answer: ')
         if str(correct_answer) == str(user_answer).strip():
             print('Correct!')
